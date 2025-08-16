@@ -12,7 +12,7 @@ const BrMatchJoin = () => {
     const navigate = useNavigate();
     const BASE_URL = import.meta.env.VITE_API_BASE_URL;
     const user = JSON.parse(localStorage.getItem("user")) || {};
-
+ 
     const [joinType, setJoinType] = useState(null);
     const [matchDetails, setMatchDetails] = useState([]);
     const { register, handleSubmit, reset } = useForm();
